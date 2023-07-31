@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import GetMovies from './components/GetMovies';
 import './App.css';
+import Navigation from './components/GetMovies/Navigation';
+import Categories from './components/GetMovies/Categories';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation/>
+      {/* <Categories/> */}
+      <GetMovies/>
     </div>
   );
 }
